@@ -19,36 +19,57 @@
     ```sh
     $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     ```
+    
 2. Make the downloaded file executable
     ```sh
     $ chmod +x Miniconda3-latest-Linux-x86_64.sh
     ```
+    
 3. Install using the script
     ```sh
     $ bash Miniconda3-latest-Linux-x86_64.sh
     ```
-4. Agree to license agreement >> yes
+    
+4. Agree to everything
+    ```sh
+    Agree to license agreement >> yes
+    ```
 
-5. Directory to install >> /path/to/my/conda
-
-6. cd /path/to/my/condabin
-
-7. $ source activate
-
-8. conda update conda
-
-9. Proceed? >> yes
-
+5. Choose any path to download to
+    ```sh
+    Directory to install >> /path/to/my/conda
+    ```
+    
+6. Change into the same directory that was chosen above 
+    ```sh
+    $ cd /path/to/my/conda/bin
+    ```
+    
+7. Activate the miniconda install
+    ```sh
+    $ source activate
+    ```
+    
+8. Update conda (optional) 
+    ```sh
+    $ conda update conda
+    ```
+    
+9.  Proceed as required
+    ```sh
+    $ Proceed? >> yes
+    ```
+    
 10. Clone this project directory
     ```sh
     $ git clone https://github.com/srinjoychakravarty/masked-array.git
     ```
-
+    
 11. Copy paste the .nc4 dataset into the repo
     ```sh
     $ mv /location/to/my/dataset/Vulcan_v3_US_annual_1km_total_mn.nc4 masked_array/
     ```
-
+    
 12. Recreate the customized environment required to run all the code in this repo:
     ```sh
     $ conda env create -f environment.yaml
